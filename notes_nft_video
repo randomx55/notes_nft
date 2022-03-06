@@ -1,0 +1,23 @@
+In this video, I show you how to use the Metaplex tools and the Solana CLI to upload your generated NFT art collection to the Solana blockchain. Hope you enjoy the video.
+
+The docs:
+https://docs.metaplex.com/create-cand...
+
+The important links:
+https://github.com/HashLips/hashlips_...
+https://github.com/metaplex-foundatio...
+https://github.com/exiled-apes/candy-...
+
+Set the environment:
+solana config set --url https://api.devnet.solana.com
+
+The important commands:
+npx ts-node js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair (PATH)
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts create_candy_machine --env devnet --keypair (PATH) 
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts update_candy_machine --keypair (PATH) --price 1 --date "19 Oct 2021 00:00:00 EST"
+
+Note: for the main net you want to replace all instances of "devnet" with "mainnet-beta".
+
+Also when you are done just run "yarn build" to build the app that you can host on a website.
